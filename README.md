@@ -58,6 +58,8 @@ Após essa execução, uma segunda Lambda, disparada via AWS Glue, atualiza a ta
 
 - PyArrow / Pandas / Boto3 – processamento e integração Python–AWS
 
+- Google Colab – ambiente de desenvolvimento e execução
+
 ### 📊 Resultados
 
 - Pipeline totalmente automatizado e sem servidores.
