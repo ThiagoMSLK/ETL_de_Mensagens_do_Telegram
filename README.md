@@ -13,18 +13,22 @@ Uma Lambda realiza o tratamento e salvamento dos dados.
 
 Após essa execução, uma segunda Lambda, disparada via AWS Glue, atualiza a tabela do Athena para refletir as novas partições.
 
-🧠 Arquitetura do Pipeline
-[Telegram API] 
-     ↓
-[AWS Lambda #1 - ETL em Python]
-     ↓
-[Amazon S3 - Armazenamento em Parquet]
-     ↓
-[AWS Lambda #2 - Atualização de Catálogo]
-     ↓
-[AWS Glue - Catálogo de Dados]
-     ↓
-[Amazon Athena - Consulta SQL Serverless]
+🧠 Arquitetura do Pipeline  
+[Telegram API]   
+     ↓  
+[AWS Lambda #1 - Ingestão em Python]  
+     ↓  
+[Amazon S3 Raw - Armazenamento em JSON]  
+     ↓  
+[AWS Lambda #2 - ETL em Python]  
+     ↓  
+[Amazon S3 Enriched - Armazenamento em Parquet]   
+     ↓  
+[AWS Glue - Catálogo de Dados]   
+     ↓  
+[AWS Lambda #3 - Atualização de Catálogo]  
+     ↓    
+[Amazon Athena - Consulta SQL Serverless]    
 
 🎯 Objetivos
 
