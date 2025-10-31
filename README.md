@@ -1,7 +1,7 @@
 # 💬 ETL de Mensagens do Telegram com AWS (Lambda, S3, Glue, Athena)
 ## Do Telegram à AWS
 
-📋 Descrição do Projeto
+### 📋 Descrição do Projeto
 
 Este projeto implementa um pipeline completo de engenharia de dados em nuvem, responsável por extrair, tratar e disponibilizar mensagens de canais públicos do Telegram utilizando serviços serverless da AWS.
 
@@ -13,7 +13,7 @@ Uma Lambda realiza o tratamento e salvamento dos dados.
 
 Após essa execução, uma segunda Lambda, disparada via AWS Glue, atualiza a tabela do Athena para refletir as novas partições.
 
-🧠 Arquitetura do Pipeline  
+### 🧠 Arquitetura do Pipeline  
 [Telegram API]   
      ↓  
 [AWS Lambda #1 - Ingestão em Python]  
@@ -30,46 +30,45 @@ Após essa execução, uma segunda Lambda, disparada via AWS Glue, atualiza a ta
      ↓    
 [Amazon Athena - Consulta SQL Serverless]    
 
-🎯 Objetivos
+### 🎯 Objetivos
 
-Automatizar a coleta e o tratamento de mensagens do Telegram.
+- Automatizar a coleta e o tratamento de mensagens do Telegram.
 
-Utilizar arquitetura serverless e escalável na AWS.
+- Utilizar arquitetura serverless e escalável na AWS.
 
-Armazenar dados em formato otimizado (Parquet).
+- Armazenar dados em formato otimizado (Parquet).
 
-Atualizar dinamicamente as partições do Athena via Glue.
+- Atualizar dinamicamente as partições do Athena via Glue.
 
-Prover um fluxo completo de ETL + Data Catalog + Query em nuvem.
+- Prover um fluxo completo de ETL + Data Catalog + Query em nuvem.
 
-⚙️ Tecnologias Utilizadas
+### ⚙️ Tecnologias Utilizadas
 
-Python 3.10+ – desenvolvimento do pipeline
+- Python 3.10+ – desenvolvimento do pipeline
 
-Telegram API – coleta das mensagens
+- Telegram API – coleta das mensagens
 
-AWS Lambda – execução das funções de ETL e atualização
+- AWS Lambda – execução das funções de ETL e atualização
 
-Amazon S3 – armazenamento dos dados tratados
+- Amazon S3 – armazenamento dos dados tratados
 
-AWS Glue – catálogo de dados e integração com Athena
+- AWS Glue – catálogo de dados e integração com Athena
 
-Amazon Athena – consultas SQL sobre dados em Parquet
+- Amazon Athena – consultas SQL sobre dados em Parquet
 
-PyArrow / Pandas / Boto3 – processamento e integração Python–AWS
+- PyArrow / Pandas / Boto3 – processamento e integração Python–AWS
 
-📊 Resultados
+### 📊 Resultados
 
-Pipeline totalmente automatizado e sem servidores.
+- Pipeline totalmente automatizado e sem servidores.
 
-Dados salvos em Parquet particionado por data e canal.
+- Dados salvos em Parquet particionado por data e canal.
 
-Atualização automática do catálogo de metadados no Glue após cada carga.
+- Atualização automática do catálogo de metadados no Glue após cada carga.
 
-Consultas SQL diretas no Athena, sem necessidade de infraestrutura adicional.
+- Consultas SQL diretas no Athena, sem necessidade de infraestrutura adicional.
 
-
-Thiago Martins LK
+### 💼 Autor: Thiago Martins LK
 - <a href="https://www.linkedin.com/in/thiagomartinslk" target="_blank">Meu LinkedIn</a>
 - <a href="https://www.kaggle.com/thiagomartinslk" target="_blank">Meu Kaggle</a>
 - <a href="https://github.com/ThiagoMSLK" target="_blank">Meu GitHub</a>
