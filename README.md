@@ -15,19 +15,19 @@ Após essa execução, uma segunda Lambda, disparada via AWS Glue, atualiza a ta
 
 ### 🧠 Arquitetura do Pipeline  
 [Telegram API]   
-     ↓  
+&emsp;     ↓  
 [AWS Lambda #1 - Ingestão em Python]  
-     ↓  
+&emsp;     ↓  
 [Amazon S3 Raw - Armazenamento em JSON]  
-     ↓  
+&emsp;     ↓  
 [AWS Lambda #2 - ETL em Python]  
-     ↓  
+&emsp;     ↓  
 [Amazon S3 Enriched - Armazenamento em Parquet]   
-     ↓  
+&emsp;     ↓  
 [AWS Glue - Catálogo de Dados]   
-     ↓  
+&emsp;     ↓  
 [AWS Lambda #3 - Atualização de Catálogo]  
-     ↓    
+&emsp;     ↓    
 [Amazon Athena - Consulta SQL Serverless]    
 
 ### 🎯 Objetivos
